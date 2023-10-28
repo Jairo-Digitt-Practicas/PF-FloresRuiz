@@ -1,153 +1,185 @@
 /** @format */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.hero h1 {
+    margin-top: 25px;
+    background-color: aqua;
+    text-align: center;
 }
 
-header {
-    background-color: #fff;
-    padding: 10px 0;
+.hero h4 {
+    text-align: center;
+    margin-top: 75px;
+}
+.navbar-nav {
+    align-items: end;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #000;
-}
-
-nav ul {
-    list-style-type: none;
-    display: inline;
-}
-
-nav li {
-    float: left;
-    margin-right: 10px;
-    padding: 0 4px;
-}
-
-main section .header {
+.contentSection {
     width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.icon {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.iconInterno {
+    width: 60%;
+}
+
+.card {
+    border: none;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.card img {
+    display: flex;
+    align-items: center;
+}
+
+.card-img-top {
+    height: 60%;
+}
+
+.contentCard {
+    text-align: center;
+    border: 2px solid rgb(10, 5, 243);
+    position: relative;
+    background-color: white;
+    margin-top: -100px;
+    border-radius: 20%;
+    padding: 10px;
+    width: 70%;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.referencias .card img {
     height: 100%;
 }
 
-.hero {
-    background-image: url("path/to/your/hero-image.jpg");
-    background-size: cover;
-    padding: 100px 0;
-    text-align: center;
+.icon {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.features,
-.process,
-.testimonials {
-    padding: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.feature-card,
-.step,
-.testimonial-card {
-    border: 1px solid #fffdfd;
-    padding: 20px;
-    margin: 10px;
-    flex: 1 calc(33.33% - 20px);
-}
-
-.feature-card img {
-    width: 400px;
-    position: relative;
-}
-.feature-card p img {
-    width: 100px;
     justify-content: center;
 }
 
-.content {
-    width: 300px;
-    height: 320px;
-    margin: 0 auto;
-    margin-top: -80px;
-    background: #fff;
-    border: 2px solid#0a05f3;
-    border-radius: 20%;
-    position: relative;
-    text-align: center;
+.proceso {
+    background-color: rgb(237, 251, 253);
+    margin-bottom: 40px;
 }
-.content div {
-    text-align: center;
+
+.col {
+    margin-bottom: 20px;
 }
-.content p {
-    text-align: center;
+
+.avanceProceso {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.textAvanceProceso {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(10, 5, 243);
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.carta {
-    display: inline-block;
+.textAvanceProceso {
+    color: white;
+    font-size: 60px;
 }
 
-footer {
-    background-color: #0a05f3;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.tituloProceso {
+    color: rgb(10, 5, 243);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.footer-section {
-    flex: 1;
-    margin-right: 20px;
-    text-align: center;
+.tituloCard {
+    color: rgb(10, 5, 243);
 }
 
-h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.videoIframe {
+    width: 100%;
+    height: 500px; /* Establece una altura inicial de 500px */
+    overflow: hidden; /* Puedes mantener overflow en "hidden" si lo prefieres */
+}
+@media (min-width: 576px) {
+    .videoConocenos {
+        height: 600px; /* Ajusta la altura para pantallas con un ancho mínimo de 576px */
+    }
+}
+@media (min-width: 768px) {
+    .videoConocenos {
+        height: 700px; /* Ajusta la altura para pantallas con un ancho mínimo de 768px */
+    }
+}
+@media (min-width: 992px) {
+    .videoConocenos {
+        height: 800px; /* Ajusta la altura para pantallas con un ancho mínimo de 992px */
+    }
+}
+@media (min-width: 1200px) {
+    .videoConocenos {
+        height: 900px; /* Ajusta la altura para pantallas con un ancho mínimo de 1200px */
+    }
+}
+@media (min-width: 1400px) {
+    .videoConocenos {
+        height: 1000px; /* Ajusta la altura para pantallas con un ancho mínimo de 1400px */
+    }
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.container {
+    max-width: 960px;
 }
 
-li {
-    margin-bottom: 5px;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 5px;
+.card-header img {
+    width: 100%;
+    height: auto;
 }
 
-footer section p img {
-    width: 30px;
+.img-fluid rounded-start {
+    width: 100%;
+    height: 200px;
 }
 
-.wsp {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(41, 222, 41);
+.botonWhatsApp {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #29de29;
     bottom: 20px;
     right: 20px;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonWhatsApp img {
+    width: 80%;
 }
