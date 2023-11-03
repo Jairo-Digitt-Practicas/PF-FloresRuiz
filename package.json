@@ -1,0 +1,19 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "Proyecto scss ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jairo-Digitt-Practicas/Proyecto_IAHOUSE_46960_Jairo_Flores_Ruiz.git"
+  },
+  "author": "Jairo Flores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jairo-Digitt-Practicas/Proyecto_IAHOUSE_46960_Jairo_Flores_Ruiz/issues"
+  },
+  "homepage": "https://github.com/Jairo-Digitt-Practicas/Proyecto_IAHOUSE_46960_Jairo_Flores_Ruiz#readme"
+}
