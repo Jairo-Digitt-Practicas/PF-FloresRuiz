@@ -1,0 +1,13 @@
+/** @format */
+
+.card-header {
+    img {
+        width: $tamanio-100;
+        height: $tamanio-auto;
+        .imagenProducto {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}

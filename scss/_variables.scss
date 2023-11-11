@@ -1,0 +1,56 @@
+/** @format */
+
+$colores: (
+    primario: #0a05f3,
+    secundario: white,
+    terciario: rgb(237, 251, 253),
+    WA: #29de29,
+    negro: black,
+);
+
+$centrado-componentes: center;
+$final-componentes: end;
+$display-flexible: flex;
+
+$overflow-hidden: hidden;
+
+$position-relative: relative;
+$position-fixed: fixed;
+
+$border-solid: solid;
+
+$tamanio-1000px: 1000px;
+$tamanio-960px: 960px;
+$tamanio-900px: 900px;
+$tamanio-800px: 800px;
+$tamanio-700px: 700px;
+$tamanio-600px: 600px;
+$tamanio-500px: 500px;
+$tamanio-200px: 200px;
+$tamanio-100px: 100px;
+$tamanio-80px: 80px;
+$tamanio-60px: 60px;
+$tamanio-75px: 75px;
+$tamanio-40px: 40px;
+$tamanio-25px: 25px;
+$tamanio-20px: 20px;
+$tamanio-10px: 10px;
+$tamanio-2px: 2px;
+$tamanio-0px: 0px;
+
+$tamanio-100: 100%;
+$tamanio-80: 80%;
+$tamanio-70: 70%;
+$tamanio-60: 60%;
+$tamanio-50: 50%;
+$tamanio-10: 10%;
+
+$tamanio-auto: auto;
+
+$tamanio-3mediorem: 3.5rem;
+
+$sizing-borderbox: border-box;
+
+$border: (
+    border-solid-dospx-primario: 2px solid #0a05f3,
+);

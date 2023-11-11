@@ -1,0 +1,7 @@
+/** @format */
+
+@mixin flexbox($display, $justificacion, $alineado) {
+    display: $display;
+    justify-content: $justificacion;
+    align-items: $alineado;
+}

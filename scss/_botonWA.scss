@@ -1,0 +1,21 @@
+/** @format */
+
+.botonWhatsApp {
+    width: $tamanio-80px;
+    height: $tamanio-80px;
+    border-radius: $tamanio-100;
+    background-color: map-get($colores, WA);
+    bottom: $tamanio-20px;
+    right: $tamanio-20px;
+    position: $position-fixed;
+    display: $display-flexible;
+    align-items: $centrado-componentes;
+    justify-content: $centrado-componentes;
+    transition: transform 1s;
+    img {
+        width: $tamanio-80;
+    }
+}
+.botonWhatsApp:hover {
+    transform: scale(1.3);
+}

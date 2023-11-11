@@ -1,0 +1,48 @@
+/** @format */
+
+.card {
+    border: $tamanio-10px;
+    border-radius: $tamanio-10;
+    padding: $tamanio-10px;
+
+    img {
+        display: $display-flexible;
+        align-items: $centrado-componentes;
+    }
+
+    &-img-top {
+        height: $tamanio-60;
+    }
+
+    &-body {
+        display: $display-flexible;
+        justify-content: $centrado-componentes;
+        border-bottom: $tamanio-10px;
+    }
+
+    .contentCard {
+        text-align: $centrado-componentes;
+        border: map-get($border, border-solid-dospx-primario);
+        position: $position-relative;
+        background-color: map-get($colores, secundario);
+        margin-top: -$tamanio-100px;
+        border-radius: $tamanio-20px;
+        padding: $tamanio-10px;
+        width: $tamanio-70;
+
+        .icon {
+            width: $tamanio-100;
+            @include flexbox(flex, center, center);
+
+            .icon img {
+                width: $tamanio-70;
+                display: $display-flexible;
+                align-items: $centrado-componentes;
+
+                .iconInterno {
+                    width: $tamanio-60;
+                }
+            }
+        }
+    }
+}

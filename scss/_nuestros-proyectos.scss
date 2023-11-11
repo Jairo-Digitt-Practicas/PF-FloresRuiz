@@ -1,0 +1,48 @@
+/** @format */
+
+.videoIframe {
+    width: $tamanio-100;
+    height: $tamanio-500px;
+    overflow: $overflow-hidden;
+    margin-left: $tamanio-10px;
+    margin-right: $tamanio-10px;
+    .visitanos {
+        padding: $tamanio-20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .videoConocenos {
+        height: $tamanio-600px;
+    }
+}
+@media (min-width: 768px) {
+    .videoConocenos {
+        height: $tamanio-700px;
+    }
+}
+@media (min-width: 992px) {
+    .videoConocenos {
+        height: $tamanio-800px;
+    }
+}
+@media (min-width: 1200px) {
+    .videoConocenos {
+        height: $tamanio-900px;
+    }
+}
+@media (min-width: 1400px) {
+    .videoConocenos {
+        height: $tamanio-1000px;
+    }
+}
+
+.container {
+    max-width: $tamanio-960px;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: $tamanio-3mediorem;
+    }
+}

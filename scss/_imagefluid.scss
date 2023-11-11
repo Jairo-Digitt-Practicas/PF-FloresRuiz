@@ -1,0 +1,8 @@
+/** @format */
+
+.img-fluid {
+    &.rounded-start {
+        width: $tamanio-100;
+        height: $tamanio-200px;
+    }
+}

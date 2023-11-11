@@ -1,0 +1,55 @@
+/** @format */
+.proceso {
+    background-color: map-get($colores, terciario);
+    margin-bottom: $tamanio-40px;
+    .tituloProceso {
+        color: map-get($colores, primario);
+        display: $display-flexible;
+        justify-content: $centrado-componentes;
+    }
+
+    .card {
+        margin-bottom: $tamanio-20px;
+        .card-img-top {
+            height: 350px;
+        }
+    }
+
+    .avanceProceso {
+        margin-bottom: $tamanio-20px;
+        display: $display-flexible;
+        width: $tamanio-100;
+        justify-content: $centrado-componentes;
+
+        .textAvanceProceso {
+            width: $tamanio-100px;
+            height: $tamanio-100px;
+            border-radius: $tamanio-50;
+            background-color: map-get($colores, primario);
+            bottom: $tamanio-10px;
+            right: $tamanio-10px;
+            margin-top: $tamanio-20px;
+            color: map-get($colores, secundario);
+            font-size: $tamanio-60px;
+            @include flexbox(flex, center, center);
+        }
+    }
+
+    .tituloCard {
+        color: map-get($colores, primario);
+    }
+}
+.referencias {
+    img {
+        height: $tamanio-100;
+    }
+
+    .col {
+        margin-bottom: $tamanio-20px;
+
+        .contentCard {
+            margin-bottom: $tamanio-20px;
+            border: map-get($border, border-solid-dospx-primario);
+        }
+    }
+}
