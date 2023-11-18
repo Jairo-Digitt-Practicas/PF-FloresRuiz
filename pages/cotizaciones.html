@@ -92,143 +92,215 @@
                     </h4>
                 </ins>
             </section>
-            <h2>Agenda tu cita</h2>
-
-            <form class="row g-3">
-                <div class="col-12">
-                    <label for="inputName" class="form-label"
-                        >Nombre completo</label
-                    >
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="inputName"
-                        placeholder="Ingrese su nombre completo" />
-                </div>
-                <div class="col-md-6">
-                    <label for="inputTelefono" class="form-label"
-                        >Telefono</label
-                    >
-                    <input
-                        type="telefono"
-                        class="form-control"
-                        id="inputTelefono"
-                        placeholder="3351258462" />
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" />
-                </div>
-                <div class="col-12">
-                    <label for="inputAddress" class="form-label"
-                        >Dirección completa</label
-                    >
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="inputCiudad"
-                        placeholder="1351 Lopez, Zona industrial, C.P, Jalisco, Mexico" />
-                </div>
-                <div class="col-md-6">
-                    <label for="inputCiudad" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCiudad" />
-                </div>
-                <div class="col-md-4">
-                    <label for="inputEstado" class="form-label">Estado</label>
-                    <select id="inputEstado" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="inputDescripcion" class="form-label"
-                        >Describe brevemente tus necesidades o idea de
-                        proyecto</label
-                    >
-                    <textarea
-                        class="form-control"
-                        id="inputDescripcion"
-                        rows="3"></textarea>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
+            <div class="cotizaciones">
+                <h2>Agenda tu cita</h2>
+                <form class="row g-3">
+                    <div class="col-12">
+                        <label for="inputName" class="form-label"
+                            >Nombre completo</label
+                        >
                         <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="gridCheck" />
-                        <label class="form-check-label" for="gridCheck">
-                            He leído y acepto la Política de Privacidad
-                        </label>
+                            type="text"
+                            class="form-control"
+                            id="inputName"
+                            placeholder="Ingrese su nombre completo"
+                            required />
                     </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">
-                        Enviar cotización
-                    </button>
-                </div>
-            </form>
+                    <div class="col-md-6">
+                        <label for="inputTelefono" class="form-label"
+                            >Telefono</label
+                        >
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="inputTelefono"
+                            placeholder="3351258462"
+                            required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label"
+                            >Email</label
+                        >
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail4"
+                            required />
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label"
+                            >Dirección completa</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputCiudad"
+                            placeholder="1351 Lopez, Zona industrial, C.P, Jalisco, Mexico"
+                            required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCiudad" class="form-label"
+                            >Ciudad</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputCiudad"
+                            required />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputEstado" class="form-label" required
+                            >Estado</label
+                        >
+                        <select
+                            name="estado"
+                            id="estado"
+                            class="form-control"
+                            required>
+                            <option value="" disabled selected>
+                                Selecciona un estado
+                            </option>
+                            <option value="Aguascalientes">
+                                Aguascalientes
+                            </option>
+                            <option value="Baja California">
+                                Baja California
+                            </option>
+                            <option value="Baja California Sur">
+                                Baja California Sur
+                            </option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Colima">Colima</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="México">México</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="San Luis Potosí">
+                                San Luis Potosí
+                            </option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDescripcion" class="form-label"
+                            >Describe brevemente tus necesidades o idea de
+                            proyecto</label
+                        >
+                        <textarea
+                            class="form-control"
+                            id="inputDescripcion"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="gridCheck"
+                                required />
+                            <label
+                                class="form-check-label"
+                                for="gridCheck"
+                                required>
+                                He leído y acepto la Política de Privacidad
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                            Enviar cotización
+                        </button>
+                    </div>
+                </form>
+            </div>
             <section>
-                <h3 class="text-center mb-4 pb-2 text-primary fw-bold">
-                    Preguntas más frecuentes
-                </h3>
-                <p class="text-center mb-5">
-                    Encuentre las respuestas a las preguntas más frecuentes a
-                    continuación
-                </p>
+                <div class="faqs">
+                    <h3 class="text-center mb-4 pb-2 text-primary fw-bold">
+                        Preguntas más frecuentes
+                    </h3>
+                    <p class="text-center mb-5">
+                        Encuentre las respuestas a las preguntas más frecuentes
+                        a continuación
+                    </p>
 
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary">
-                            <i class="far fa-paper-plane text-primary pe-2"></i>
-                            ¿La domótica es costosa?
-                        </h6>
-                        <p>
-                            <strong><u>¡En lo absoluto!</u></strong> Solo es
-                            costosa cuando los beneficios que recibes no son los
-                            que esperas por el precio que te dan. Es por eso que
-                            nosotros le generamos al cliente una perspectiva del
-                            proyecto donde vean con claridad los beneficios que
-                            obtienen y las soluciones que se merecen.
-                        </p>
-                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <h6 class="mb-3 text-primary">
+                                <i
+                                    class="far fa-paper-plane text-primary pe-2"></i>
+                                ¿La domótica es costosa?
+                            </h6>
+                            <p>
+                                <strong><u>¡En lo absoluto!</u></strong> Solo es
+                                costosa cuando los beneficios que recibes no son
+                                los que esperas por el precio que te dan. Es por
+                                eso que nosotros le generamos al cliente una
+                                perspectiva del proyecto donde vean con claridad
+                                los beneficios que obtienen y las soluciones que
+                                se merecen.
+                            </p>
+                        </div>
 
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary">
-                            <i class="fas fa-pen-alt text-primary pe-2"></i> ¿Se
-                            puede dar un costo aproximado de una instalación?
-                        </h6>
-                        <p>
-                            <strong><u>Yes, it is possible!</u></strong> Hacerlo
-                            sin un estudio previo no sería adecuado. Antes que
-                            nada debemos entender lo que necesitas a través de
-                            un levantamiento que permite identificar qué equipos
-                            son los adecuados para ti, en qué zonas o espacios
-                            quieres hacer la integración tecnológica, qué
-                            distancias vamos a cubrir, etc. Esto nos permitirá
-                            saber cómo cumplir con todos tus requerimientos,
-                            darte un costo y empezar a brindarte el mejor
-                            servicio.
-                        </p>
-                    </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <h6 class="mb-3 text-primary">
+                                <i class="fas fa-pen-alt text-primary pe-2"></i>
+                                ¿Se puede dar un costo aproximado de una
+                                instalación?
+                            </h6>
+                            <p>
+                                <strong><u>No es lo más recomendado</u></strong>
+                                Hacerlo sin un estudio previo no sería adecuado.
+                                Antes que nada debemos entender lo que necesitas
+                                a través de un levantamiento que permite
+                                identificar qué equipos son los adecuados para
+                                ti, en qué zonas o espacios quieres hacer la
+                                integración tecnológica, qué distancias vamos a
+                                cubrir, etc. Esto nos permitirá saber cómo
+                                cumplir con todos tus requerimientos, darte un
+                                costo y empezar a brindarte el mejor servicio.
+                            </p>
+                        </div>
 
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary">
-                            <i class="fas fa-user text-primary pe-2"></i> ¿Los
-                            sistemas son muy complicados de utilizar?
-                        </h6>
-                        <p>
-                            Para nada. El sistema está pensado para que puedan
-                            usarlo desde tus hijos hasta los abuelos, con
-                            interfaces muy amigables, sencillas y cómodas de
-                            utilizar. Todos notarán que te preocupas por su
-                            bienestar.
-                        </p>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <h6 class="mb-3 text-primary">
+                                <i class="fas fa-user text-primary pe-2"></i>
+                                ¿Los sistemas son muy complicados de utilizar?
+                            </h6>
+                            <p>
+                                <strong><u>Para nada.</u></strong>
+                                El sistema está pensado para que puedan usarlo
+                                desde tus hijos hasta los abuelos, con
+                                interfaces muy amigables, sencillas y cómodas de
+                                utilizar. Todos notarán que te preocupas por su
+                                bienestar.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer
-            class="text-center text-lg-start text-white"
+            class="text-center text-white"
             style="background-color: rgb(10, 5, 243)">
             <div class="botonWhatsApp">
                 <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
@@ -254,12 +326,6 @@
                         <i class="fab fa-twitter"></i>
                     </a>
                     <a
-                        href="https://www.google.com"
-                        target="_blank"
-                        class="me-4 text-reset">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a
                         href="https://www.instagram.com"
                         target="_blank"
                         class="me-4 text-reset">
@@ -270,12 +336,6 @@
                         target="_blank"
                         class="me-4 text-reset">
                         <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a
-                        href="https://www.github.com"
-                        target="_blank"
-                        class="me-4 text-reset">
-                        <i class="fab fa-github"></i>
                     </a>
                 </div>
             </section>
@@ -297,12 +357,12 @@
                             Otros enlaces
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset"
+                            <a href="../pages/404.html" class="text-reset"
                                 >Artículos y noticias</a
                             >
                         </p>
                         <p>
-                            <a href="#!" class="text-reset"
+                            <a href="../pages/404.html" class="text-reset"
                                 >Política de Privacidad</a
                             >
                         </p>
@@ -369,8 +429,11 @@
                 class="text-center p-4"
                 style="background-color: rgba(0, 0, 0, 0.05)">
                 © 2021 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-                    >IA House</a
+                <a
+                    class="text-reset fw-bold"
+                    target="_blank"
+                    href="https://github.com/Jairo-Digitt-Practicas?tab=repositories"
+                    >Jairo Flores Ruiz</a
                 >
             </div>
         </footer>

@@ -1,4 +1,7 @@
 /** @format */
+.beneficios {
+    overflow: $overflow-hidden;
+}
 .proceso {
     background-color: map-get($colores, terciario);
     margin-bottom: $tamanio-40px;
@@ -10,8 +13,13 @@
 
     .card {
         margin-bottom: $tamanio-20px;
+
         .card-img-top {
             height: 350px;
+
+            .card-img {
+                width: 100%;
+            }
         }
     }
 

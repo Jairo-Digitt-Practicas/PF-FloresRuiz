@@ -1,0 +1,33 @@
+/** @format */
+
+header,
+footer {
+    background-color: map-get($colores, primario);
+    color: map-get($colores, secundario);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: $tamanio-20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+img {
+    max-width: $tamanio-100;
+    height: auto;
+    margin-top: $tamanio-20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.errorImagen {
+    display: $display-flexible;
+    justify-content: $centrado-componentes;
+    text-align: $centrado-componentes;
+}

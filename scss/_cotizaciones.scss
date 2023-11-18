@@ -1,0 +1,10 @@
+/** @format */
+
+.cotizaciones {
+    margin: $tamanio-20px;
+    border: map-get($border, border-solid-dospx-primario);
+    padding: $tamanio-20px;
+}
+.faqs {
+    margin: $tamanio-20px;
+}

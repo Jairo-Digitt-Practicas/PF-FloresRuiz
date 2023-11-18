@@ -93,6 +93,10 @@ body {
 }
 
 /** @format */
+.beneficios {
+  overflow: hidden;
+}
+
 .proceso {
   background-color: rgb(237, 251, 253);
   margin-bottom: 40px;
@@ -107,6 +111,9 @@ body {
 }
 .proceso .card .card-img-top {
   height: 350px;
+}
+.proceso .card .card-img-top .card-img {
+  width: 100%;
 }
 .proceso .avanceProceso {
   margin-bottom: 20px;
@@ -205,6 +212,7 @@ body {
 }
 .botonWhatsApp img {
   width: 80%;
+  margin-top: 0;
 }
 
 .botonWhatsApp:hover {
@@ -212,6 +220,10 @@ body {
 }
 
 /** @format */
+.tienda {
+  overflow: hidden;
+}
+
 .card-header img {
   width: 100%;
   height: auto;
@@ -232,4 +244,48 @@ body {
 .img-fluid.rounded-start {
   width: 100%;
   height: auto;
+}
+
+/** @format */
+.cotizaciones {
+  margin: 20px;
+  border: 2px solid #0a05f3;
+  padding: 20px;
+}
+
+.faqs {
+  margin: 20px;
+}
+
+/** @format */
+header,
+footer {
+  background-color: #0a05f3;
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.errorImagen {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */
