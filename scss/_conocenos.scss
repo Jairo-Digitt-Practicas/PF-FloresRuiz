@@ -1,5 +1,33 @@
 /** @format */
+.cardConocenos h5 {
+    display: $display-flexible;
+    justify-content: $centrado-componentes;
+    text-align: $centrado-componentes;
+}
+
+.cardConocenos p {
+    padding: $tamanio-20px;
+}
+
 .img-fluid.rounded-start {
-    width: 100%;
+    width: $tamanio-100;
     height: auto;
+}
+
+.visitanos {
+    padding: $tamanio-20px;
+}
+
+@media (max-width: 576px) {
+    .contentSectionConocenos {
+        background-image: url("../assets/imagenes/headersMovil/headerConocenosMovil.jpg");
+        height: 200px;
+    }
+}
+
+@media (min-width: 770px) {
+    .contentSectionConocenos {
+        background-image: url("../assets/imagenes/headerConocenos.png");
+        width: $tamanio-100;
+    }
 }

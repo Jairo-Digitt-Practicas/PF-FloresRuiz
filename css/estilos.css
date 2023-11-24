@@ -50,6 +50,15 @@ body {
 }
 
 /** @format */
+body {
+  overflow-x: hidden;
+}
+
+.row-cols-1 .col .imagenProducto {
+  max-width: 100%;
+  height: auto;
+}
+
 .card {
   border: 10px;
   border-radius: 10%;
@@ -58,6 +67,8 @@ body {
 .card img {
   display: flex;
   align-items: center;
+  max-width: 100%;
+  height: auto;
 }
 .card-img-top {
   height: 60%;
@@ -90,6 +101,10 @@ body {
 }
 .card .contentCard .icon .icon img .iconInterno {
   width: 60%;
+}
+
+.proceso {
+  overflow: hidden;
 }
 
 /** @format */
@@ -150,9 +165,30 @@ body {
   border: 2px solid #0a05f3;
 }
 
+@media (max-width: 576px) {
+  .contentSectionInicio {
+    background-image: url("../assets/imagenes/headersMovil/headerInicioMovil.jpg");
+    height: 200px;
+  }
+}
+@media (min-width: 770px) {
+  .contentSectionInicio {
+    background-image: url("../assets/imagenes/headerInicio.png");
+    width: 100%;
+  }
+}
 /** @format */
+.row {
+  margin-inline: 20px;
+}
+
+.video {
+  text-align: center;
+  padding-top: 40px;
+}
+
 .videoIframe {
-  width: 100%;
+  width: 50%;
   height: 500px;
   overflow: hidden;
   margin-left: 10px;
@@ -162,29 +198,47 @@ body {
   padding: 20px;
 }
 
+@media (max-width: 576px) {
+  .contentSectionNuestros {
+    background-image: url("../assets/imagenes/headersMovil/headerNuestrosProyectosMovil.png");
+    height: 200px;
+  }
+}
+@media (min-width: 770px) {
+  .contentSectionNuestros {
+    background-image: url("../assets/imagenes/headerNuestrosProyectos.png");
+    width: 100%;
+  }
+}
 @media (min-width: 576px) {
-  .videoConocenos {
-    height: 600px;
+  .videoIframe {
+    height: 500px;
+  }
+  .videoIframe .row {
+    margin-inline: none;
   }
 }
 @media (min-width: 768px) {
-  .videoConocenos {
-    height: 700px;
+  .videoIframe {
+    height: 500px;
+  }
+  .videoIframe .row {
+    margin-inline: none;
   }
 }
 @media (min-width: 992px) {
-  .videoConocenos {
-    height: 800px;
+  .videoIframe {
+    height: 600px;
   }
 }
 @media (min-width: 1200px) {
-  .videoConocenos {
-    height: 900px;
+  .videoIframe {
+    height: 700px;
   }
 }
 @media (min-width: 1400px) {
-  .videoConocenos {
-    height: 1000px;
+  .videoIframe {
+    height: 800px;
   }
 }
 .container {
@@ -224,6 +278,10 @@ body {
   overflow: hidden;
 }
 
+.mb-3 {
+  margin-inline: 20px;
+}
+
 .card-header img {
   width: 100%;
   height: auto;
@@ -234,6 +292,18 @@ body {
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .contentSectionTienda {
+    background-image: url("../assets/imagenes/headersMovil/headerTiendaMovil.jpg");
+    height: 200px;
+  }
+}
+@media (min-width: 770px) {
+  .contentSectionTienda {
+    background-image: url("../assets/imagenes/headerTienda.png");
+    width: 100%;
+  }
+}
 /** @format */
 .img-fluid.rounded-start {
   width: 100%;
@@ -241,11 +311,37 @@ body {
 }
 
 /** @format */
+.cardConocenos h5 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardConocenos p {
+  padding: 20px;
+}
+
 .img-fluid.rounded-start {
   width: 100%;
   height: auto;
 }
 
+.visitanos {
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .contentSectionConocenos {
+    background-image: url("../assets/imagenes/headersMovil/headerConocenosMovil.jpg");
+    height: 200px;
+  }
+}
+@media (min-width: 770px) {
+  .contentSectionConocenos {
+    background-image: url("../assets/imagenes/headerConocenos.png");
+    width: 100%;
+  }
+}
 /** @format */
 .cotizaciones {
   margin: 20px;
@@ -257,6 +353,18 @@ body {
   margin: 20px;
 }
 
+@media (max-width: 576px) {
+  .contentSectionCotizaciones {
+    background-image: url("../assets/imagenes/headersMovil/headerCotizacionesMovil.avif");
+    height: 200px;
+  }
+}
+@media (min-width: 770px) {
+  .contentSectionCotizaciones {
+    background-image: url("../assets/imagenes/headerCotizaciones.png");
+    width: 100%;
+  }
+}
 /** @format */
 header,
 footer {

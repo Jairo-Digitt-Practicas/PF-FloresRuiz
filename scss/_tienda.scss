@@ -3,14 +3,32 @@
     overflow: $overflow-hidden;
 }
 
+.mb-3 {
+    margin-inline: $tamanio-20px;
+}
+
 .card-header {
     img {
         width: $tamanio-100;
         height: $tamanio-auto;
         .imagenProducto {
-            display: flex;
-            align-items: center;
-            width: 100%;
+            display: $display-flexible;
+            align-items: $centrado-componentes;
+            width: $tamanio-100;
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .contentSectionTienda {
+        background-image: url("../assets/imagenes/headersMovil/headerTiendaMovil.jpg");
+        height: 200px;
+    }
+}
+
+@media (min-width: 770px) {
+    .contentSectionTienda {
+        background-image: url("../assets/imagenes/headerTienda.png");
+        width: $tamanio-100;
     }
 }

@@ -1,5 +1,14 @@
 /** @format */
 
+body {
+    overflow-x: $overflow-hidden;
+}
+
+.row-cols-1 .col .imagenProducto {
+    max-width: $tamanio-100;
+    height: $tamanio-auto;
+}
+
 .card {
     border: $tamanio-10px;
     border-radius: $tamanio-10;
@@ -8,6 +17,8 @@
     img {
         display: $display-flexible;
         align-items: $centrado-componentes;
+        max-width: $tamanio-100;
+        height: $tamanio-auto;
     }
 
     &-img-top {
@@ -45,4 +56,8 @@
             }
         }
     }
+}
+
+.proceso {
+    overflow: hidden;
 }

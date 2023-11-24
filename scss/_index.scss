@@ -61,3 +61,17 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .contentSectionInicio {
+        background-image: url("../assets/imagenes/headersMovil/headerInicioMovil.jpg");
+        height: 200px;
+    }
+}
+
+@media (min-width: 770px) {
+    .contentSectionInicio {
+        background-image: url("../assets/imagenes/headerInicio.png");
+        width: $tamanio-100;
+    }
+}
