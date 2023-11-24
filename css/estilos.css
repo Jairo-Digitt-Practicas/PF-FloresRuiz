@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** @format */
 /** @format */
 /** @format */
@@ -396,4 +397,15 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+/** @format */
+.enlace {
+  color: white; /* Color del texto normal */
+  text-decoration: none; /* Eliminar el subrayado predeterminado del enlace */
+  transition: color 0.3s ease; /* Agregar una transición suave para el cambio de color */
+}
+
+.enlace:hover {
+  color: black; /* Color del texto al pasar el mouse sobre el enlace */
 }/*# sourceMappingURL=estilos.css.map */

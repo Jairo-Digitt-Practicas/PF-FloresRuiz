@@ -1,0 +1,14 @@
+/** @format */
+
+.enlace {
+    color: map-get($colores, secundario); /* Color del texto normal */
+    text-decoration: none; /* Eliminar el subrayado predeterminado del enlace */
+    transition: color 0.3s ease; /* Agregar una transición suave para el cambio de color */
+}
+
+.enlace:hover {
+    color: map-get(
+        $colores,
+        negro
+    ); /* Color del texto al pasar el mouse sobre el enlace */
+}
