@@ -1,6 +1,6 @@
 /** @format */
 .hero h1,
-.hero ins h4 {
+.hero ins h2 {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease-in-out forwards;
@@ -27,7 +27,7 @@
         text-align: $centrado-componentes;
     }
 
-    h4 {
+    h2 {
         text-align: $centrado-componentes;
         margin-top: $tamanio-75px;
         margin-left: $tamanio-20px;
