@@ -1,0 +1,546 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Configuración del documento -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Título de la página y descripción para SEO -->
+        <title>Carrito - Carrito de compras</title>
+        <meta
+            name="description"
+            content="¡Bienvenido a nuestra página de carrito de compras! Explora nuestra amplia selección de productos y añade tus artículos favoritos a tu carrito con un simple clic. Proceso de pago rápido y seguro. ¡Haz tus compras con confianza!" />
+
+        <!-- Ícono de la página -->
+        <link rel="icon" href="../logo.ico" />
+
+        <!-- Estilos y fuentes -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/estilos.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <!-- Barra de navegación -->
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-light fixed-top w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/imagenes/logo.png" alt="logo" />
+                    </a>
+
+                    <!-- Botón para navegación en dispositivos móviles -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menú de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul
+                            class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="../index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../pages/nuestrosProyectos.html"
+                                    >Nuestros Proyectos</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/tienda.html"
+                                    >Tienda</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../pages/cotizaciones.html"
+                                    >Cotizaciones</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../pages/conocenos.html"
+                                    >Conócenos</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="h-100 h-custom">
+                <div class="container h-100 py-5">
+                    <div
+                        class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="h5">
+                                                Carrito de compras
+                                            </th>
+                                            <th scope="col">Formato</th>
+                                            <th scope="col">Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="contenedor-productos">
+                                        <!-- Aquí se agregarán dinámicamente las filas de los productos del carrito -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div
+                                class="card shadow-2-strong mb-5 mb-lg-0"
+                                style="border-radius: 16px">
+                                <div class="card-body p-4">
+                                    <div class="row">
+                                        <div
+                                            class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                                            <form>
+                                                <div
+                                                    class="d-flex flex-row pb-3">
+                                                    <div
+                                                        class="d-flex align-items-center pe-2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="radioNoLabel"
+                                                            id="radioNoLabel1v"
+                                                            value=""
+                                                            aria-label="..."
+                                                            checked />
+                                                    </div>
+                                                    <div
+                                                        class="rounded border w-100 p-3">
+                                                        <p
+                                                            class="d-flex align-items-center mb-0">
+                                                            <i
+                                                                class="fab fa-cc-mastercard fa-2x text-dark pe-2"></i
+                                                            >Credit Card
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-row pb-3">
+                                                    <div
+                                                        class="d-flex align-items-center pe-2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="radioNoLabel"
+                                                            id="radioNoLabel2v"
+                                                            value=""
+                                                            aria-label="..." />
+                                                    </div>
+                                                    <div
+                                                        class="rounded border w-100 p-3">
+                                                        <p
+                                                            class="d-flex align-items-center mb-0">
+                                                            <i
+                                                                class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"></i
+                                                            >Debit Card
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <div
+                                                        class="d-flex align-items-center pe-2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="radioNoLabel"
+                                                            id="radioNoLabel3v"
+                                                            value=""
+                                                            aria-label="..." />
+                                                    </div>
+                                                    <div
+                                                        class="rounded border w-100 p-3">
+                                                        <p
+                                                            class="d-flex align-items-center mb-0">
+                                                            <i
+                                                                class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"></i
+                                                            >PayPal
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-6">
+                                            <div class="row">
+                                                <div class="col-12 col-xl-6">
+                                                    <div
+                                                        class="form-outline mb-4 mb-xl-5">
+                                                        <input
+                                                            type="text"
+                                                            id="typeName"
+                                                            class="form-control form-control-lg"
+                                                            siez="17"
+                                                            placeholder="John Smith" />
+                                                        <label
+                                                            class="form-label"
+                                                            for="typeName"
+                                                            >Name on card</label
+                                                        >
+                                                    </div>
+
+                                                    <div
+                                                        class="form-outline mb-4 mb-xl-5">
+                                                        <input
+                                                            type="text"
+                                                            id="typeExp"
+                                                            class="form-control form-control-lg"
+                                                            placeholder="MM/YY"
+                                                            size="7"
+                                                            id="exp"
+                                                            minlength="7"
+                                                            maxlength="7" />
+                                                        <label
+                                                            class="form-label"
+                                                            for="typeExp"
+                                                            >Expiration</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-xl-6">
+                                                    <div
+                                                        class="form-outline mb-4 mb-xl-5">
+                                                        <input
+                                                            type="text"
+                                                            id="typeText"
+                                                            class="form-control form-control-lg"
+                                                            siez="17"
+                                                            placeholder="1111 2222 3333 4444"
+                                                            minlength="19"
+                                                            maxlength="19" />
+                                                        <label
+                                                            class="form-label"
+                                                            for="typeText"
+                                                            >Card Number</label
+                                                        >
+                                                    </div>
+
+                                                    <div
+                                                        class="form-outline mb-4 mb-xl-5">
+                                                        <input
+                                                            type="password"
+                                                            id="typeText"
+                                                            class="form-control form-control-lg"
+                                                            placeholder="&#9679;&#9679;&#9679;"
+                                                            size="1"
+                                                            minlength="3"
+                                                            maxlength="3" />
+                                                        <label
+                                                            class="form-label"
+                                                            for="typeText"
+                                                            >Cvv</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                            <div
+                                                class="d-flex justify-content-between"
+                                                style="font-weight: 500"
+                                                id="contenedor-saldos">
+                                                <!-- <p class="mb-2">Subtotal</p>
+                                                <p class="mb-2">$23.49</p> -->
+                                            </div>
+
+                                            <div
+                                                class="d-flex justify-content-between"
+                                                style="font-weight: 500">
+                                                <p class="mb-0">Envio</p>
+                                                <p class="mb-0">$300.00</p>
+                                            </div>
+
+                                            <hr class="my-4" />
+
+                                            <div
+                                                class="d-flex justify-content-between mb-4"
+                                                style="font-weight: 500"
+                                                id="contenedor-saldosEnvio">
+                                                <!-- <p class="mb-2">
+                                                    Total (Impuestos incluidos)
+                                                </p>
+                                                <p class="mb-2">$26.48</p> -->
+                                            </div>
+
+                                            <a
+                                                href="../pages/404.html"
+                                                class="btn btn-primary btn-block btn-lg">
+                                                <div
+                                                    class="d-flex justify-content-between">
+                                                    <span>Checkout</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: rgb(10, 5, 243)">
+            <div class="botonWhatsApp">
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                    <img src="../assets/imagenes/whatsapp.svg" alt="WhatsApp" />
+                </a>
+            </div>
+            <section class="d-flex justify-content-center p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block text-center">
+                    <span>Conéctate con nosotros en las redes sociales:</span>
+                </div>
+                <div>
+                    <a
+                        href="https://www.facebook.com"
+                        target="_blank"
+                        class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a
+                        href="https://www.twitter.com"
+                        target="_blank"
+                        class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com"
+                        target="_blank"
+                        class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com"
+                        target="_blank"
+                        class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <img src="../assets/imagenes/marca.png" alt="logo" />
+                        <p>
+                            Todos nuestros servicios y productos son realizados
+                            y entregados por expertos en los temas de
+                            mantenimiento y conocen a detalle las
+                            funcionalidades necesarias de los mismos. Si tienes
+                            alguna duda, no dudes en consultarla, y así te
+                            podremos asesorar.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Otros enlaces
+                        </h6>
+                        <ins>
+                            <p>
+                                <a href="../pages/404.html" class="enlace"
+                                    >Artículos y noticias</a
+                                >
+                            </p>
+                        </ins>
+                        <ins>
+                            <p>
+                                <a href="../pages/404.html" class="enlace"
+                                    >Política de Privacidad</a
+                                >
+                            </p>
+                        </ins>
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Horarios de atención
+                        </h6>
+                        <p>
+                            9 AM - 5 PM, Lunes - Sábado, Horarios de la Ciudad
+                            de México
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Enlaces rápidos
+                        </h6>
+                        <ins>
+                            <p>
+                                <a
+                                    href="../index.html"
+                                    class="enlace"
+                                    title="paginaIndex"
+                                    >Inicio</a
+                                >
+                            </p>
+                        </ins>
+                        <ins>
+                            <p>
+                                <a
+                                    href="../pages/nuestrosProyectos.html"
+                                    class="enlace"
+                                    title="paginaNuestrosProyectos"
+                                    >Nuestros proyectos</a
+                                >
+                            </p>
+                        </ins>
+                        <ins>
+                            <p>
+                                <a
+                                    href="../pages/tienda.html"
+                                    title="paginaTienda"
+                                    class="enlace"
+                                    >Tienda</a
+                                >
+                            </p>
+                        </ins>
+                        <ins>
+                            <p>
+                                <a
+                                    href="../pages/cotizaciones.html"
+                                    class="enlace"
+                                    title="paginaCotizaciones"
+                                    >Cotizaciones</a
+                                >
+                            </p>
+                        </ins>
+                        <ins>
+                            <p>
+                                <a
+                                    href="../pages/conocenos.html"
+                                    class="enlace"
+                                    title="paginaConocenos"
+                                    >Conócenos</a
+                                >
+                            </p>
+                        </ins>
+                    </div>
+                    <div
+                        class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p>
+                            <i class="fas fa-home me-3"></i> Calle Lázaro
+                            Cárdenas 6484, Colonia Zona Industrial, Guadalajara,
+                            Jalisco C.P. 44940
+                        </p>
+                        <ins>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                <a
+                                    href="mailto:contacto@iahouse.com"
+                                    class="enlace"
+                                    title="correo"
+                                    >contacto@iahouse.com</a
+                                >
+                            </p>
+                        </ins>
+                        <ins>
+                            <p>
+                                <i class="fas fa-phone me-3"></i>
+                                <a
+                                    href="tel:3315455448"
+                                    class="enlace"
+                                    title="telefono"
+                                    >33 1545 5448
+                                </a>
+                            </p>
+                        </ins>
+                        <ins>
+                            <p>
+                                <i class="fab fa-whatsapp me-3"></i>
+                                <a
+                                    href="fax://3315455448"
+                                    class="enlace"
+                                    title="fax"
+                                    >33 1545 5448</a
+                                >
+                            </p>
+                        </ins>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="text-center p-4"
+                style="background-color: rgba(0, 0, 0, 0.05)">
+                <ins>
+                    © 2023 Copyright:
+                    <a
+                        class="text-reset fw-bold"
+                        target="_blank"
+                        href="https://github.com/Jairo-Digitt-Practicas?tab=repositories"
+                        title="autor"
+                        >Jairo Flores Ruiz</a
+                    >
+                </ins>
+            </div>
+        </footer>
+        <!-- Incluye Bootstrap JS desde el CDN con su integridad y atributo crossorigin -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Incluye la biblioteca AOS (Animate on Scroll) desde el CDN -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Inicializa la biblioteca AOS para agregar efectos de animación al desplazarse -->
+        <script>
+            AOS.init();
+        </script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
+
+<div class="col" data-aos="fade-right" data-aos-duration="3000">
+    <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+            <img
+                class="imagenProducto"
+                src="../assets/imagenes/Productos/Enchufe inteligente.jpg" />
+            <h3 class="my-0 fw-normal">Enchufe</h3>
+            <h3 class="my-0 fw-normal">inteligente</h3>
+        </div>
+        <div class="cardProducto">
+            <h4 class="card-title pricing-card-title">$400.00</h4>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>Facil de instalar</li>
+                <li>Controla el dispositivo con tu voz</li>
+                <li>Se enlaza con tu asistente (alexa)</li>
+                <li>Control ante descargas</li>
+            </ul>
+            <button
+                onclick="addProductsToCarrito(3)"
+                class="w-100 btn btn-lg btn-outline-primary">
+                Comprar ahora
+            </button>
+        </div>
+    </div>
+</div>
